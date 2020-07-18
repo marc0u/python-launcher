@@ -1,5 +1,5 @@
 # [python-launcher](https://github.com/marc0u/python-launcher)
-It works to lauch pythons apps getting all python dependencies previusly.
+It works to lauch python apps getting all python dependencies previusly.
 
 ## Usage
 
