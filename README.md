@@ -1,10 +1,10 @@
 # [python-launcher](https://github.com/marc0u/python-launcher)
 
-It works to lauch python apps getting all python dependencies previusly.
+It works to lauch python apps getting all python dependencies previusly using [pipenv](https://github.com/pypa/pipenv).
 
 ## Usage
 
-Before running Docker, you have to freeze the dependencies of your project `pip freeze > requirements.txt`
+Before running Docker, the files Pipfile and Pipfile.lock must to be ready ex. `pipenv install somepackage`
 
 ```
 docker run -d \
@@ -26,6 +26,7 @@ docker run -d \
 
 ## Versions
 
+- **14.08.20:** - Pipenv support added. 
 - **27.07.20:** - Readme Modified.
 - **17.07.20:** - Added Dockerfile.
 - **17.07.20:** - Initial Release.
