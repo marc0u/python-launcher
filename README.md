@@ -1,10 +1,12 @@
 # [python-launcher](https://github.com/marc0u/python-launcher)
 
-It works to lauch python apps getting all python dependencies previusly using [pipenv](https://github.com/pypa/pipenv).
+The way to lauch python apps fastly, based on the [pipenv](https://github.com/pypa/pipenv) packaging tool.
+
+Based on the official [python:3-alpine](https://hub.docker.com/_/python) image. The [python-launcher](https://github.com/marc0u/python-launcher) works to lauch python apps getting all python project dependencies previusly using and [pipenv](https://github.com/pypa/pipenv).
 
 ## Usage
 
-Before running Docker, the files Pipfile and Pipfile.lock must to be ready ex. `pipenv install somepackage`
+Before running Docker, make sure the files Pipfile and Pipfile.lock are prepared ex. `pipenv install somepackage`
 
 ```
 docker run -d \
@@ -20,7 +22,7 @@ docker run -d \
 
 |        Parameter         | Function                   |
 | :----------------------: | -------------------------- |
-|        `-v /app`         | Local path for the App.    |
+| `-v $PWD:/app`           | Specify path for the App.  |
 | `-e TZ=America/Santiago` | Specify a timezone to use. |
 | `-e APPNAME="myapp.py"`  | Specify App's name.        |
 
