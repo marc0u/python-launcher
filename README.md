@@ -2,7 +2,7 @@
 
 The way to lauch python apps fastly, based on the [pipenv](https://github.com/pypa/pipenv) packaging tool.
 
-Based on the official [python:3-alpine](https://hub.docker.com/_/python) image. The [python-launcher](https://github.com/marc0u/python-launcher) works to lauch python apps getting all python project dependencies previusly using and [pipenv](https://github.com/pypa/pipenv).
+Based on the official [python:3.10-alpine](https://hub.docker.com/_/python) image. The [python-launcher](https://github.com/marc0u/python-launcher) works to lauch python apps getting all python project dependencies previusly using and [pipenv](https://github.com/pypa/pipenv).
 
 ## Usage
 
@@ -28,6 +28,7 @@ docker run -d \
 
 ## Versions
 
+- **10.10.21:** - Updated to python 3.10. 
 - **14.08.20:** - Pipenv support added. 
 - **27.07.20:** - Readme Modified.
 - **17.07.20:** - Added Dockerfile.
